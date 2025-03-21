@@ -13,6 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<ContextDb>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("TestDbString")), ServiceLifetime.Scoped);
 builder.Services.AddScoped<IUsersLoginsService, UserLoginService>();
+builder.Services.AddScoped<IRestaurantService, RestaurantService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

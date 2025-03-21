@@ -14,5 +14,6 @@ namespace api1.Interfaces
         Task<IActionResult> DeleteUserAsync(int userId);
         Task<IActionResult> CheckLoginUniqueAsync(string login); // Новый метод
 
+
     }
 }
